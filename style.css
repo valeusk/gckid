@@ -23,7 +23,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-# Normalize
+# Reset CSS
 # Typography
 # Elements
 # Forms
@@ -42,7 +42,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
-/* =Reset
+/* ------------------Reset CSS
 -------------------------------------------------------------- */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
@@ -162,7 +162,7 @@ textarea {
   color: #333;
   font-family: "OpenSansRegular", sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.4;
 }
 
 h1,
@@ -172,6 +172,20 @@ h4,
 h5,
 h6 {
   clear: both;
+}
+
+h2.entry-title {
+  font-size: 25px;
+  font-family: "OpenSansBold", sans-serif;
+  margin-bottom: 5px;
+}
+h2.entry-title a {
+  color: #333;
+}
+h2.entry-title a:hover {
+  color: #3979b5;
+  -webkit-transition: all 0.2s ease;
+          transition: all 0.2s ease;
 }
 
 p {
@@ -230,7 +244,8 @@ big {
   font-size: 125%;
 }
 
-/*---------------- Header -------------------------------------*/
+/*---------------- Header -----------------
+------------------------------------------*/
 .site-title {
   font-family: "OpenSansBold";
   font-size: 30px;
@@ -479,7 +494,8 @@ a:active {
   display: inline-block;
   margin: 0 auto;
   text-transform: uppercase;
-  margin-right: 40px;
+  margin-right: 15px;
+  margin-left: 15px;
 }
 
 .main-navigation a {
@@ -493,9 +509,16 @@ a:active {
           transition: all 0.3s ease;
 }
 
+/*ul.sub-menu a{
+    text-align: center;
+}*/
 .sub-menu {
   background-color: #fff;
   border-radius: 5px;
+}
+.sub-menu a {
+  padding: 5px;
+  text-align: center;
 }
 
 .main-navigation ul ul {
@@ -680,6 +703,39 @@ button.menu-toggle:hover {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+.content-area {
+  margin-top: 50px;
+}
+
+.entry-meta span {
+  color: #3979b5;
+  font-size: 13px;
+}
+
+.more-link {
+  text-transform: uppercase;
+  font-size: 12px;
+  border: 2px solid #3979b5;
+  padding: 4px 20px;
+  border-radius: 3px;
+}
+.more-link:hover {
+  background-color: #3979b5;
+  color: #fff;
+  -webkit-transition: all 0.4s ease;
+          transition: all 0.4s ease;
+}
+
+.entry-footer {
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+.site-main article {
+  border-bottom: 1px solid #dbdbdb;
+  margin-bottom: 30px;
+}
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
@@ -702,9 +758,12 @@ button.menu-toggle:hover {
 }
 
 .page-content,
-.entry-content,
 .entry-summary {
   margin: 1.5em 0 0;
+}
+
+.entry-content {
+  margin: 1.2em 0 0;
 }
 
 .page-links {
