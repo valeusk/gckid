@@ -28,7 +28,7 @@ $menutxtcolor: #5b5b5b;
 $bordercolor: #f0f0f0;
 $titlefont: "OpenSansBold";
 $sitetitlefont: $titlefont;
-
+$footercolor: #363636;
 
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
@@ -200,6 +200,30 @@ h6 {
 	clear: both;
 }
 
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 14px;
+}
+
 h2.entry-title {
     font-size: 25px;
     font-family: $titlefont, sans-serif;
@@ -289,7 +313,7 @@ big {
 
 .site-description {
     text-align: center;
-    color: #5b5b5b;
+    color: $menutxtcolor;
     margin: -40px 0px 0px;
     text-transform: uppercase;
     }
@@ -733,16 +757,72 @@ button.menu-toggle {
 	clear: both;
 }
 
+
+
+/*-----------------------------------------------
+side bar
+----------------------------------------------*/
+
+h2.widget-title {
+    font-size: 28px;
+    font-family: $titlefont, sans-serif;
+    color: $titlecolor;
+    border-bottom: 1px solid $titlecolor;
+    padding-bottom: 8px;
+}
+
+.widget-area {
+    margin-left: 60px;
+
+    ul {
+        margin: 0px;
+    }
+
+    li {
+        list-style: none;
+        padding: 15px 10px;
+        margin: 0;
+        border-bottom: 1px solid #f2f2f2;
+
+        &:first-child {
+            padding-top: 20px;
+        }
+
+        a{
+            color: $menutxtcolor;
+            &:hover {
+                color: #000;
+            }
+        }
+    }
+}
+
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
 .widget {
-	margin: 0 0 1.5em;
+	margin: 0 0 70px;
 }
 
 /* Make sure select elements fit in widgets. */
 .widget select {
 	max-width: 100%;
+}
+
+/*----------------------------------------------------------
+FOOTER
+----------------------------------------------------------*/
+.site-footer {
+    background-color: $footercolor;
+    padding: 40px 0;
+    text-align: center;
+    color: #b5b5b5;
+    a {
+        color: #b5b5b5;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 /*--------------------------------------------------------------
@@ -826,6 +906,34 @@ button.menu-toggle {
 
 .bypostauthor {
 	display: block;
+}
+
+/*-----------------------------------
+# Paginashion
+------------------------------------*/
+.pagination-line {
+    border: 2px solid $titlecolor;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 5px;
+    background-color: $titlecolor;
+    a {
+        color: #fff;
+    }
+}
+a.page-numbers {
+    font-size: 18px;
+    margin: 10px;
+    }
+
+span.page-numbers.current {
+    color: #fff;
+    font-family: $titlefont;
+    font-size: 22px;
+    padding: 2px 5px;
+    border: 2px solid #fff;
+    border-radius: 3px;
 }
 
 /*--------------------------------------------------------------

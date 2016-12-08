@@ -12,6 +12,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
         <div class="container">
              <div class="col-lg-8">
+               <div class="row">
                 <main id="main" class="site-main" role="main">
 
                 <?php
@@ -37,7 +38,7 @@ get_header(); ?>
 
                     endwhile;
 
-                    the_posts_navigation();
+                   /* the_posts_navigation();*/
 
                 else :
 
@@ -47,9 +48,19 @@ get_header(); ?>
 
                 </main><!-- #main -->
 
-            </div> <!-- col-lg-8 -->
+                </div> <!-- row -->
+              </div> <!-- col-lg-8 -->
             <?php get_sidebar(); ?>
         </div> <!-- container bootstrap -->
+         <div class="container">
+              <div class="col-lg-12">
+              <div class="row">
+               <div class="pagination-line">
+                <?php  my_pagenavi(); ?>
+                </div> <!-- pagination-line -->
+                </div> <!-- row -->
+                </div> <!-- col-lg-12 -->
+                </div> <!-- container -->
 	</div><!-- #primary -->
 
 <?php

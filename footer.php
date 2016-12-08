@@ -14,11 +14,17 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'gckid' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'gckid' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'gckid' ), 'gckid', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
-		</div><!-- .site-info -->
+	 <div class="container">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="site-info">
+                            <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'gckid' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'gckid' ), 'WordPress' ); ?></a>
+                            <span class="sep"> | </span>
+                            <?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'gckid' ), 'gckid', '<a href="#" rel="designer">Кузьмин В. В.</a>' ); ?>
+                        </div><!-- .site-info -->
+	                </div> <!-- row -->
+                </div> <!-- col-lg-12 -->
+            </div> <!-- container bootstrap -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
