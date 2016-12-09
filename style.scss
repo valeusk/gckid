@@ -29,6 +29,7 @@ $bordercolor: #f0f0f0;
 $titlefont: "OpenSansBold";
 $sitetitlefont: $titlefont;
 $footercolor: #363636;
+$transitionall: all 0.2s ease;
 
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
@@ -555,7 +556,8 @@ a:active {
         transition: all 0.2s ease;
         border-top: 2px solid;
         border-bottom: 2px solid;
-    padding: 5px 3px;
+        padding: 5px 3px;
+        transition: $transitionall;
     }
 }
 
@@ -579,7 +581,8 @@ a:active {
 }
 
 .main-navigation ul ul {
-	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	/*margin-top: 10px;*/
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	float: left;
 	position: absolute;
 	top: 1.5em;
@@ -934,8 +937,28 @@ FOOTER
 }
 a.page-numbers {
     font-size: 18px;
-    margin: 10px;
+    margin: 5px;
+    padding: 2px 5px;
+    border: 2px solid $titlecolor;
+    &:hover {
+        /*margin-top: 0px;
+    margin-bottom: 0px;*/
+        padding-top: 6px;
+        padding-bottom: 3px;
+        padding-left: 5px;
+        padding-right: 5px;
+        /*padding: 2px 5px;*/
+        border: 2px solid #fff;
+        border-radius: 3px;
+        transition: $transitionall;
     }
+}
+
+.page-numbers.dots {
+    color: #fff;
+    font-size: 22px;
+
+}
 
 span.page-numbers.current {
     color: #fff;

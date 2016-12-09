@@ -9,23 +9,24 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+    <div id="primary" class="content-area">
         <div class="container">
-             <div class="col-lg-8">
-               <div class="row">
-                <main id="main" class="site-main" role="main">
+            <div class="col-lg-8">
+                <div class="row">
+                    <main id="main" class="site-main" role="main">
 
-                <?php
+                        <?php
                 if ( have_posts() ) : ?>
 
-                    <!--<header class="page-header">
+                            <!--<header class="page-header">
                         <?php
                             the_archive_title( '<h1 class="page-title">', '</h1>' );
                             the_archive_description( '<div class="archive-description">', '</div>' );
                         ?>
-                    </header>--><!-- .page-header -->
+                    </header>-->
+                            <!-- .page-header -->
 
-                    <?php
+                            <?php
                     /* Start the Loop */
                     while ( have_posts() ) : the_post();
 
@@ -46,23 +47,32 @@ get_header(); ?>
 
                 endif; ?>
 
-                </main><!-- #main -->
+                    </main>
+                    <!-- #main -->
 
-                </div> <!-- row -->
-              </div> <!-- col-lg-8 -->
+                </div>
+                <!-- row -->
+            </div>
+            <!-- col-lg-8 -->
             <?php get_sidebar(); ?>
-        </div> <!-- container bootstrap -->
-         <div class="container">
-              <div class="col-lg-12">
-              <div class="row">
-               <div class="pagination-line">
-                <?php  my_pagenavi(); ?>
-                </div> <!-- pagination-line -->
-                </div> <!-- row -->
-                </div> <!-- col-lg-12 -->
-                </div> <!-- container -->
-	</div><!-- #primary -->
+        </div>
+        <!-- container bootstrap -->
+        <div class="container">
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="pagination-line">
+                        <?php  my_pagenavi(); ?>
+                    </div>
+                    <!-- pagination-line -->
+                </div>
+                <!-- row -->
+            </div>
+            <!-- col-lg-12 -->
+        </div>
+        <!-- container -->
+    </div>
+    <!-- #primary -->
 
-<?php
+    <?php
 
 get_footer(); ?>
