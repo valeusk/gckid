@@ -24,6 +24,8 @@ function gckid_setup() {
 	 */
 	load_theme_textdomain( 'gckid', get_template_directory() . '/languages' );
 
+    add_theme_support( 'custom-logo' );
+
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
 
