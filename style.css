@@ -670,12 +670,16 @@ a:active {
   display: block;
   text-decoration: none;
   color: #5b5b5b;
-  padding: 0px 3px;
 }
 .main-navigation a:hover {
   color: #d84f4f;
-  -webkit-transition: all 0.2s ease;
-          transition: all 0.2s ease;
+}
+
+.menu-item {
+  padding: 0px 3px;
+}
+.menu-item:hover {
+  color: #d84f4f;
   border-top: 2px solid;
   border-bottom: 2px solid;
   padding: 5px 3px;
@@ -683,27 +687,38 @@ a:active {
           transition: all 0.2s ease;
 }
 
+.current-menu-item {
+  border: 2px solid;
+  color: #d84f4f;
+  padding: 5px 3px;
+}
 .current-menu-item a {
   color: #d84f4f;
   font-family: "OpenSansBold";
-  border: 2px solid;
-  padding: 5px 3px;
 }
 
-/*ul.sub-menu a{
-    text-align: center;
-}*/
 .sub-menu {
   background-color: #fff;
-  border-radius: 5px;
+  border-radius: 5px
+        /*ul {
+
+        }*/
 }
-.sub-menu a {
+.sub-menu .menu-item {
+  border: 2px solid #fff;
   padding: 5px;
-  text-align: center;
+  margin: 5px;
+}
+.sub-menu .menu-item:hover {
+  color: #d84f4f;
+  border: 2px solid;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease;
+          transition: all 0.2s ease;
 }
 
 .main-navigation ul ul {
-  /*margin-top: 10px;*/
+  margin-top: 11px;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
   position: absolute;
@@ -1200,10 +1215,8 @@ object {
     border-bottom: 1px solid #f0f0f0;
   }
   .main-navigation li:hover {
-    background-color: #3979b5;
-  }
-  .main-navigation li:hover a {
-    color: #fff;
+    /*a {color: #fff;}*/
+    /*background-color: $titlecolor;*/
   }
   .main-navigation li:last-child {
     border-bottom: none;

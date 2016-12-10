@@ -726,16 +726,21 @@ a:active {
     text-transform: uppercase;
     margin-right: 10px;
     margin-left: 10px;
-}
+    }
 
 .main-navigation a {
 	display: block;
 	text-decoration: none;
     color: $menutxtcolor;
+        &:hover{
+        color: #d84f4f;
+        }
+}
+
+.menu-item {
     padding: 0px 3px;
     &:hover{
         color: #d84f4f;
-        transition: all 0.2s ease;
         border-top: 2px solid;
         border-bottom: 2px solid;
         padding: 5px 3px;
@@ -743,27 +748,42 @@ a:active {
     }
 }
 
-.current-menu-item a{
+.current-menu-item{
+    border: 2px solid;
+    color: #d84f4f;
+    padding: 5px 3px;
+    a{
     color: #d84f4f;
     font-family: $titlefont;
-    border: 2px solid;
-    padding: 5px 3px;
+    }
 }
-/*ul.sub-menu a{
-    text-align: center;
-}*/
+
 
 .sub-menu {
     background-color: #fff;
     border-radius: 5px;
-    a {
-        padding: 5px;
-        text-align: center;
-    }
+
+        /*ul {
+
+        }*/
+
+        .menu-item  {
+            border: 2px solid #fff;
+            padding: 5px;
+            margin: 5px;
+
+            &:hover {
+            color: #d84f4f;
+            border: 2px solid;
+            border-radius: 4px;
+            transition: $transitionall;
+            }
+        }
+
 }
 
 .main-navigation ul ul {
-	/*margin-top: 10px;*/
+	margin-top: 11px;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	float: left;
 	position: absolute;
@@ -1293,8 +1313,8 @@ object {
         border-bottom: 1px solid $bordercolor;
 
         &:hover {
-            a {color: #fff;}
-            background-color: $titlecolor;
+            /*a {color: #fff;}*/
+            /*background-color: $titlecolor;*/
         }
 
         &:last-child {
