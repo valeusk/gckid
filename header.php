@@ -48,16 +48,12 @@
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<div class="container">
-                   <div class="col-lg-12">
-                       <div class="row">
+
                             <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="fa fa-bars" aria-hidden="true"></i>
                             </button>
 
                             <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-		              </div> <!-- row -->
-		          </div> <!-- col-lg-12 -->
-		    </div> <!-- container-fluid -->
+
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
