@@ -1058,23 +1058,39 @@ h2.widget-title {
 
 .search-form {
     text-align: center;
-    background-color: $titlecolor;
-    padding: 20px;
+    background-color: #fff;
+    padding: 5px;
     border-radius: 4px;
+    border: 2px solid $titlecolor;
 }
 
-.search-submit {
+/*.search-submit {
     font-size: 20px;
-}
+}*/
 
 input.search-submit {
-    font-size: 14px;
+    width: 270px;
+    margin: 5px;
+    font-size: 16px;
     box-shadow: none;
-    background: #000;
-    color: #fff;
-    border: none;
+    background: #fff;
+    color: $titlecolor;
+    border: 2px solid $titlecolor;
     text-shadow: none;
+    &:hover {
+        color:#fff;
+        background: $titlecolor ;
+        border: 2px solid $titlecolor;
+        transition: $transitionall;
+        box-shadow: none;
+    }
 
+}
+
+input.search-field {
+    width: 260px;
+    margin: 5px;
+    border: 2px solid $titlecolor;
 }
 /*----------------------------------------------------------
 FOOTER
@@ -1182,7 +1198,7 @@ FOOTER
 .pagination-line {
     border: 2px solid $titlecolor;
     border-radius: 4px;
-    padding: 10px;
+    padding: 8px;
     text-align: center;
     margin-bottom: 5px;
     background-color: $titlecolor;
@@ -1192,7 +1208,7 @@ FOOTER
 }
 a.page-numbers {
     font-size: 18px;
-    margin: 5px;
+    margin: 2px;
     padding: 2px 5px;
     border: 2px solid $titlecolor;
     &:hover {
