@@ -21,7 +21,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 
 $titlesize: 30px;
-$titlecolor: #3979b5;
+$titlecolor:/* #3979b5;*/#3934b5;
 $linkcolor:$titlecolor;
 $linkhover: #ff2d2d;
 $menutxtcolor: #5b5b5b;
@@ -469,6 +469,9 @@ big {
 
 /*---------------- Header -----------------
 ------------------------------------------*/
+.site-header {
+   background-image: linear-gradient(#47cb75,#ffffff);
+}
 
 .site-title {
     font-family: $sitetitlefont;
@@ -761,8 +764,8 @@ a:active {
 
 .sub-menu {
     background-color: #fff;
-    border-radius: 5px;
-
+    border-radius: 0px 0px 5px 5px;
+    border-top:  1px solid  #d84f4f;
         /*ul {
 
         }*/
@@ -771,6 +774,10 @@ a:active {
             border: 2px solid #fff;
             padding: 5px;
             margin: 5px;
+
+            &:first-child {
+
+            }
 
             &:hover {
             color: #d84f4f;
@@ -783,7 +790,7 @@ a:active {
 }
 
 .main-navigation ul ul {
-	margin-top: 11px;
+	margin-top: 10px;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	float: left;
 	position: absolute;
@@ -1306,6 +1313,13 @@ object {
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 
+    .current-menu-item {
+        border: 2px solid #fff;
+        border-radius: 4px;
+        a {color: #fff;}
+        background-color: $titlecolor;
+    }
+
     .main-navigation li {
         display: list-item;
         margin-right: 0;
@@ -1313,8 +1327,11 @@ object {
         border-bottom: 1px solid $bordercolor;
 
         &:hover {
-            /*a {color: #fff;}*/
-            /*background-color: $titlecolor;*/
+            a {color: #fff;}
+            background-color: $titlecolor;
+            border: 2px solid #fff;
+            border-radius: 4px;
+            transition: $transitionall;
         }
 
         &:last-child {
@@ -1333,6 +1350,10 @@ object {
 
     .main-navigation.toggled {
         padding-bottom: 4px;
+    }
+
+    .main-navigation ul ul, .submenu {
+        display: none!important;
     }
 
 }

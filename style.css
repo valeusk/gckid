@@ -344,7 +344,7 @@ h2.entry-title a {
   color: #333;
 }
 h2.entry-title a:hover {
-  color: #3979b5;
+  color: #3934b5;
   -webkit-transition: all 0.2s ease;
           transition: all 0.2s ease;
 }
@@ -407,19 +407,24 @@ big {
 
 /*---------------- Header -----------------
 ------------------------------------------*/
+.site-header {
+  background-image: -webkit-linear-gradient(#47cb75, #ffffff);
+  background-image: linear-gradient(#47cb75, #ffffff);
+}
+
 .site-title {
   font-family: "Exo2Bold";
   font-size: 30px;
-  color: #3979b5;
+  color: #3934b5;
   text-transform: uppercase;
   text-align: center;
 }
 
 .site-title a, h1.site-title a {
-  color: #3979b5;
+  color: #3934b5;
 }
 .site-title a:hover, h1.site-title a:hover {
-  color: #3979b5;
+  color: #3934b5;
 }
 
 .site-description {
@@ -618,7 +623,7 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: #3979b5;
+  color: #3934b5;
 }
 
 /*a:visited {
@@ -699,7 +704,8 @@ a:active {
 
 .sub-menu {
   background-color: #fff;
-  border-radius: 5px
+  border-radius: 0px 0px 5px 5px;
+  border-top: 1px solid  #d84f4f
         /*ul {
 
         }*/
@@ -718,7 +724,7 @@ a:active {
 }
 
 .main-navigation ul ul {
-  margin-top: 11px;
+  margin-top: 10px;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
   position: absolute;
@@ -761,7 +767,7 @@ button.menu-toggle {
   margin: 0 auto;
 }
 button.menu-toggle:hover {
-  color: #3979b5;
+  color: #3934b5;
   -webkit-transition: all 0.3s ease;
           transition: all 0.3s ease;
 }
@@ -891,8 +897,8 @@ side bar
 h2.widget-title {
   font-size: 28px;
   font-family: "OpenSansBold", sans-serif;
-  color: #3979b5;
-  border-bottom: 1px solid #3979b5;
+  color: #3934b5;
+  border-bottom: 1px solid #3934b5;
   padding-bottom: 8px;
 }
 
@@ -932,7 +938,7 @@ h2.widget-title {
 
 .search-form {
   text-align: center;
-  background-color: #3979b5;
+  background-color: #3934b5;
   padding: 20px;
   border-radius: 4px;
 }
@@ -974,19 +980,19 @@ FOOTER
 }
 
 .entry-meta span {
-  color: #3979b5;
+  color: #3934b5;
   font-size: 13px;
 }
 
 .more-link {
   text-transform: uppercase;
   font-size: 12px;
-  border: 2px solid #3979b5;
+  border: 2px solid #3934b5;
   padding: 4px 20px;
   border-radius: 3px;
 }
 .more-link:hover {
-  background-color: #3979b5;
+  background-color: #3934b5;
   font-family: "OpenSansBold";
   color: #fff;
   -webkit-transition: all 0.6s ease;
@@ -1053,12 +1059,12 @@ FOOTER
 # Paginashion
 ------------------------------------*/
 .pagination-line {
-  border: 2px solid #3979b5;
+  border: 2px solid #3934b5;
   border-radius: 4px;
   padding: 10px;
   text-align: center;
   margin-bottom: 5px;
-  background-color: #3979b5;
+  background-color: #3934b5;
 }
 .pagination-line a {
   color: #fff;
@@ -1068,7 +1074,7 @@ a.page-numbers {
   font-size: 18px;
   margin: 5px;
   padding: 2px 5px;
-  border: 2px solid #3979b5;
+  border: 2px solid #3934b5;
 }
 a.page-numbers:hover {
     /*margin-top: 0px;
@@ -1208,6 +1214,15 @@ object {
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
+  .current-menu-item {
+    border: 2px solid #fff;
+    border-radius: 4px;
+    background-color: #3934b5;
+  }
+  .current-menu-item a {
+    color: #fff;
+  }
+
   .main-navigation li {
     display: list-item;
     margin-right: 0;
@@ -1215,8 +1230,14 @@ object {
     border-bottom: 1px solid #f0f0f0;
   }
   .main-navigation li:hover {
-    /*a {color: #fff;}*/
-    /*background-color: $titlecolor;*/
+    background-color: #3934b5;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+  }
+  .main-navigation li:hover a {
+    color: #fff;
   }
   .main-navigation li:last-child {
     border-bottom: none;
@@ -1232,6 +1253,10 @@ object {
 
   .main-navigation.toggled {
     padding-bottom: 4px;
+  }
+
+  .main-navigation ul ul, .submenu {
+    display: none !important;
   }
 }
 /* Small Devices, Tablets */
