@@ -701,19 +701,21 @@ a:active {
 }
 
 .menu-item {
-  padding: 0px 3px;
+  padding: 5px 3px;
+  border: 2px solid #fff;
 }
 .menu-item:hover {
   color: #d84f4f;
-  border-top: 2px solid;
-  border-bottom: 2px solid;
+  border: 2px dashed;
   padding: 5px 3px;
   -webkit-transition: all 0.2s ease;
           transition: all 0.2s ease;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .current-menu-item {
-  border: 2px solid;
+  border: 2px solid #d84f4f;
   color: #d84f4f;
   padding: 5px 3px;
 }
@@ -725,7 +727,7 @@ a:active {
 .sub-menu {
   background-color: #fff;
   border-radius: 0px 0px 5px 5px;
-  border-top: 1px solid  #d84f4f
+  border-top: 1px solid  #fff
         /*ul {
 
         }*/
@@ -737,7 +739,7 @@ a:active {
 }
 .sub-menu .menu-item:hover {
   color: #d84f4f;
-  border: 2px solid;
+  border: 2px dashed;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease;
           transition: all 0.2s ease;
