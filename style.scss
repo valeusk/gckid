@@ -411,6 +411,18 @@ h2.entry-title {
     }
 }
 
+h1.entry-title {
+    font-size: 25px;
+    font-family: $titlefont, sans-serif;
+    margin-bottom: 5px;
+    /*text-align: center;*/
+    padding-left: 20px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid $bordercolor;
+    text-transform: uppercase;
+}
+
+
 p {
 	margin-bottom: 1.5em;
 }
@@ -1370,6 +1382,30 @@ object {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+    h2.entry-title {
+        font-size: 20px;
+        font-family: $titlefont, sans-serif;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        a{
+            color: #333;
+            &:hover {
+                color: $titlecolor;
+                transition: all 0.2s ease;
+            }
+        }
+    }
+
+  h1.entry-title {
+    font-size: 22px;
+    font-family: $titlefont, sans-serif;
+    margin-bottom: 5px;
+    /*text-align: center;*/
+    padding-left: 20px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid $bordercolor;
+    text-transform: uppercase;
+}
 
 
 }
@@ -1384,6 +1420,31 @@ object {
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
 
+  h2.entry-title {
+        font-size: 16px;
+        font-family: $titlefont, sans-serif;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        a{
+            color: #333;
+            &:hover {
+                color: $titlecolor;
+                transition: all 0.2s ease;
+            }
+        }
+    }
+
+  h1.entry-title {
+    font-size: 16px;
+    font-family: $titlefont, sans-serif;
+    margin-bottom: 5px;
+    /*text-align: center;*/
+    padding-left: 20px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid $bordercolor;
+    text-transform: uppercase;
+}
+
 }
 
 
@@ -1391,6 +1452,8 @@ object {
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
+
+
 
 }
 

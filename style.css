@@ -349,6 +349,17 @@ h2.entry-title a:hover {
           transition: all 0.2s ease;
 }
 
+h1.entry-title {
+  font-size: 25px;
+  font-family: "OpenSansBold", sans-serif;
+  margin-bottom: 5px;
+  /*text-align: center;*/
+  padding-left: 20px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #f0f0f0;
+  text-transform: uppercase;
+}
+
 p {
   margin-bottom: 1.5em;
 }
@@ -1269,8 +1280,62 @@ object {
   }
 }
 /* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  h2.entry-title {
+    font-size: 20px;
+    font-family: "OpenSansBold", sans-serif;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+  }
+  h2.entry-title a {
+    color: #333;
+  }
+  h2.entry-title a:hover {
+    color: #3934b5;
+    -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+  }
+
+  h1.entry-title {
+    font-size: 22px;
+    font-family: "OpenSansBold", sans-serif;
+    margin-bottom: 5px;
+    /*text-align: center;*/
+    padding-left: 20px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #f0f0f0;
+    text-transform: uppercase;
+  }
+}
 /* Extra Small Devices, Phones */
 /* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  h2.entry-title {
+    font-size: 16px;
+    font-family: "OpenSansBold", sans-serif;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+  }
+  h2.entry-title a {
+    color: #333;
+  }
+  h2.entry-title a:hover {
+    color: #3934b5;
+    -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+  }
+
+  h1.entry-title {
+    font-size: 16px;
+    font-family: "OpenSansBold", sans-serif;
+    margin-bottom: 5px;
+    /*text-align: center;*/
+    padding-left: 20px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #f0f0f0;
+    text-transform: uppercase;
+  }
+}
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
 /* Extra Small Devices, Phones */
