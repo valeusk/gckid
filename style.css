@@ -435,7 +435,7 @@ big {
 }
 
 .site-branding {
-  margin: 6px 0 40px;
+  margin: 70px 6px 10px;
 }
 
 /*-----------------------------------------
@@ -651,6 +651,15 @@ a:active {
   border-top: 1px solid #f0f0f0;
   border-bottom: 1px solid #f0f0f0;
   padding: 8px 0;
+}
+
+/*╨╗╨╕╨┐╨║╨╛╨╡ ╨╝╨╡╨╜╤О*/
+/*nav 3 ╨▓╨░╤А╨╕╨░╨╜╤В*/
+.main-navigation {
+  z-index: 99999;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
 }
 
 .main-navigation ul {
@@ -976,7 +985,7 @@ FOOTER
 # Content
 --------------------------------------------------------------*/
 .content-area {
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .entry-meta span {
