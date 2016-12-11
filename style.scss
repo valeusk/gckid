@@ -535,6 +535,7 @@ html {
 
 body {
 	background: #fff; /* Fallback for when there is no custom background color defined. */
+    min-width: 320px;
 }
 
 blockquote:before,
@@ -1396,6 +1397,11 @@ object {
 
     .main-navigation ul ul, .submenu {
         display: none!important;
+    }
+
+
+    .widget-area {
+        margin-left: 0px;
     }
 
 }
