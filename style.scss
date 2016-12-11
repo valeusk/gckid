@@ -1196,6 +1196,28 @@ FOOTER
 /*-----------------------------------
 # Paginashion
 ------------------------------------*/
+
+.nav-previous, .nav-next  {
+    padding: 10px;
+    a {
+        font-size: 20;
+        font-family: $titlefont;
+        background-color: $titlecolor;
+        padding: 5px 10px;
+        border-radius: 4px;
+        color: #fff;
+        &:hover {
+           background-color:#fff;
+            color: $titlecolor;
+            border: 2px solid $titlecolor;
+            transition: $transitionall;
+        }
+    }
+
+}
+
+
+
 .pagination-line {
     border: 2px solid $titlecolor;
     border-radius: 4px;
