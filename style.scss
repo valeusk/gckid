@@ -28,8 +28,14 @@ $menutxtcolor: #5b5b5b;
 $bordercolor: #f0f0f0;
 $titlefont: "OpenSansBold";
 $sitetitlefont: "Exo2Bold";
-$footercolor: #363636;
+$footercolor: #41416c; /*Цвет футера*/
+$footer-txt-color:#b5b5b5;
 $transitionall: all 0.2s ease;
+$gradientcolor1:#344eb5;
+$gradientcolor2:#fff;
+$menufont:"Exo2Bold";
+$site-titlecolor: #fff;
+$menu-curent-color:#f81313;
 
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
@@ -401,6 +407,14 @@ h6 {
     font-size: 14px;
 }
 
+.box-shadow-custom {box-shadow: 3px 3px 15px 3px rgba(49, 24, 82, 0.53) , -5px -3px 15px -3px rgba(49, 24, 82, 0.5) ;}
+
+.contur-txt-dark {
+/*color:#fff;*/
+text-shadow: -1px 0 1px #000, 1px 0 1px #000, 0 -1px 1px #000, 0 1px 1px #000, 0 0 15px #000;
+}
+
+
 h2.entry-title {
     font-size: 25px;
     font-family: $titlefont, sans-serif;
@@ -493,21 +507,22 @@ big {
 /*---------------- Header -----------------
 ------------------------------------------*/
 .site-header {
-   background-image: linear-gradient(#47cb75,#ffffff);
-}
+     background-image: linear-gradient($gradientcolor1,$gradientcolor2);
+   }
 
-.site-title {
+ .site-title  {
     font-family: $sitetitlefont;
     font-size: $titlesize;
-    color: $titlecolor;
     text-transform: uppercase;
     text-align: center;
+     text-shadow: -1px 0 1px #000, 1px 0 1px #000, 0 -1px 1px #000, 0 1px 1px #000, 0 0 15px #000;
    }
 
 .site-title a, h1.site-title a {
-    color: $titlecolor;
+    color: $site-titlecolor;
+    letter-spacing: 0.1em;
     &:hover{
-        color: $titlecolor;
+        color: $site-titlecolor;
     }
 }
 
@@ -770,8 +785,9 @@ a:active {
 	display: block;
 	text-decoration: none;
     color: $menutxtcolor;
+    font-family: $menufont;
         &:hover{
-        color: #d84f4f;
+        color: $menu-curent-color;
         }
 }
 
@@ -780,7 +796,7 @@ a:active {
     border: 2px solid #fff;
 
     &:hover{
-        color: #d84f4f;
+        color: $menu-curent-color;
         border: 2px dashed;
         padding: 5px 3px;
         transition: $transitionall;
@@ -791,12 +807,12 @@ a:active {
 }
 
 .current-menu-item{
-    border: 2px solid #d84f4f;
-    color: #d84f4f;
+    border: 2px solid $menu-curent-color;
+    color: $menu-curent-color;
     padding: 5px 3px;
     a{
-    color: #d84f4f;
-    font-family: $titlefont;
+    color: $menu-curent-color;
+    font-family: $menufont;
     }
 }
 
@@ -1113,15 +1129,31 @@ FOOTER
     background-color: $footercolor;
     padding: 40px 0;
     text-align: center;
-    color: #b5b5b5;
+    color:  $footer-txt-color;
     a {
-        color: #b5b5b5;
+        color:  $footer-txt-color;
         &:hover {
             text-decoration: underline;
         }
     }
 }
 
+.gckid-info  {
+    //padding-top: 15px;
+    color: $footer-txt-color;
+    h5 {
+        text-align: justify;
+        border-bottom: 2px solid;
+        padding-bottom: 5px;}
+
+    p {
+        text-align: left;
+    }
+}
+
+.map-gckid {
+    margin: 0px;
+}
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -1149,12 +1181,20 @@ FOOTER
     border: 2px solid $titlecolor;
     padding: 4px 20px;
     border-radius: 3px;
+    //a {
+    //    color: $titlecolor;
+   // }
     &:hover {
         background-color: $titlecolor;
         font-family: $titlefont;
         color: #fff;
         transition: all 0.6s ease;
     }
+}
+
+a.more-link {
+     color: $titlecolor;
+    font-family: $titlefont;
 }
 
 .entry-footer {
@@ -1249,11 +1289,11 @@ FOOTER
 
 
 .pagination-line {
-    border: 2px solid $titlecolor;
+    //border: 2px solid $titlecolor;
     border-radius: 4px;
-    padding: 8px;
+    padding: 10px;
     text-align: center;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
     background-color: $titlecolor;
     a {
         color: #fff;
