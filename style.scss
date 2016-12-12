@@ -372,6 +372,8 @@ h4,
 h5,
 h6 {
 	clear: both;
+    line-height: 1.3em;
+    margin-bottom: 10px;
 }
 
 h1 {
@@ -427,6 +429,7 @@ h1.entry-title {
     border-bottom: 2px solid $bordercolor;
     margin-bottom: 1.1em;
     padding-bottom: 0.3em;
+    font-family: $titlefont;
 }
 
 
@@ -1070,6 +1073,7 @@ h2.widget-title {
     padding: 5px;
     border-radius: 4px;
     border: 2px solid $titlecolor;
+    margin-bottom: 20px;
 }
 
 /*.search-submit {
