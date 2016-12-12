@@ -11,7 +11,7 @@
 
 <section class="no-results not-found">
 	<header class="page-header">
-		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'gckid' ); ?></h1>
+		<h1 class="page-title"><?php esc_html_e( 'Упс....', 'gckid' ); ?></h1>
 	</header><!-- .page-header -->
 
 	<div class="page-content">
@@ -22,7 +22,7 @@
 
 		<?php elseif ( is_search() ) : ?>
 
-			<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'gckid' ); ?></p>
+			<p><?php esc_html_e( 'Извините, ничего не найдено. Попробуйте сформулировать запрос иначе.', 'gckid' ); ?></p>
 			<?php
 				get_search_form();
 

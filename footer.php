@@ -20,7 +20,7 @@
                         <div class="site-info">
                             <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'gckid' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'gckid' ), 'WordPress' ); ?></a>
                             <span class="sep"> | </span>
-                            <?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'gckid' ), 'gckid', '<a href="#" rel="designer">Кузьмин В. В.</a>' ); ?>
+                            <?php printf( esc_html__( 'Верстка: %1$s  %2$s.', 'gckid' ), 'ГЦКиД', '<a href="#" rel="designer">Кузьмин В. В.</a>' ); ?>
                         </div><!-- .site-info -->
 	                </div> <!-- row -->
                 </div> <!-- col-lg-12 -->

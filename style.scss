@@ -136,6 +136,7 @@ a:active {
 
 a img {
     border: 0;
+    margin: 10px;
 }
 
 /* =END Reset
@@ -420,6 +421,12 @@ h1.entry-title {
     padding-bottom: 5px;
     border-bottom: 2px solid $bordercolor;
     text-transform: uppercase;
+}
+
+.page-title {
+    border-bottom: 2px solid $bordercolor;
+    margin-bottom: 1.1em;
+    padding-bottom: 0.3em;
 }
 
 
@@ -1118,7 +1125,7 @@ FOOTER
 }
 
 .entry-meta span {
-    color: $titlecolor;
+    /*color: $titlecolor;*/
     font-size: 13px;
 }
 
@@ -1138,7 +1145,7 @@ FOOTER
 
 .entry-footer {
     padding-top: 10px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 .site-main article {
@@ -1174,7 +1181,7 @@ FOOTER
 }
 
 .entry-content {
-    margin: 1.2em 0 0
+    margin: 0.5em 0 0;
 }
 
 .page-links {

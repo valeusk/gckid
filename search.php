@@ -10,16 +10,20 @@
 get_header(); ?>
 
 	<section id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<div class="container">
+    <div class="col-lg-12">
+        <div class="row">
+            <main id="main" class="site-main" role="main">
 
-		<?php
+                <?php
 		if ( have_posts() ) : ?>
 
-			<header class="page-header">
-				<h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'gckid' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-			</header><!-- .page-header -->
+                    <header class="page-header">
+                        <h1 class="page-title"><?php printf( esc_html__( ' Результаты поиска: %s', 'gckid' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+                    </header>
+                    <!-- .page-header -->
 
-			<?php
+                    <?php
 			/* Start the Loop */
 			while ( have_posts() ) : the_post();
 
@@ -40,9 +44,16 @@ get_header(); ?>
 
 		endif; ?>
 
-		</main><!-- #main -->
+            </main>
+            <!-- #main -->
+        </div>
+        <!-- row -->
+    </div>
+    <!-- col-lg-12 -->
+</div>
+<!-- container bootstrap -->
 	</section><!-- #primary -->
 
 <?php
-get_sidebar();
+/*get_sidebar();*/
 get_footer();
