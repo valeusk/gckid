@@ -41,14 +41,14 @@ get_header(); ?>
     <!-- container bootstrap -->
     <div class="container">
        <div class="single-nav row">
-         <div class="previous col-lg-6 col-md-6" style="">
+
+        <div class="previous col-lg-6 col-md-6" style=""  >
          <? previous_post_link();?>
-         </div> <!-- previous -->
-
-
-        <div class="next col-lg-6 col-md-6" style=""  >
-         <? next_post_link();?>
          </div> <!-- next -->
+
+         <div class="next col-lg-6 col-md-6" style="">
+         <? next_post_link();?>
+         </div> <!-- previous -->
         </div> <!-- single-nav row -->
     </div> <!-- container -->
 </div>
