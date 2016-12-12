@@ -22,8 +22,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 $titlesize: 30px;
 $titlecolor:/* #3979b5;*/#3934b5;
-$linkcolor:$titlecolor;
-$linkhover: #ff2d2d;
+$linkcolor: #333/* #000*/;
+$linkhover: $titlecolor /*#ff2d2d*/;
 $menutxtcolor: #5b5b5b;
 $bordercolor: #f0f0f0;
 $titlefont: "OpenSansBold";
@@ -374,6 +374,7 @@ h6 {
 	clear: both;
     line-height: 1.3em;
     margin-bottom: 10px;
+    font-family: $titlefont;
 }
 
 h1 {
@@ -705,15 +706,16 @@ textarea {
 --------------------------------------------------------------*/
 a {
 	color: $linkcolor;
+
+    &:hover {
+	color: $linkhover;
+        transition: $transitionall;
+        }
 }
 
 /*a:visited {
 	color: purple;
 }*/
-
-a:hover {
-	color: $linkhover;
-}
 
 /*a:focus {
 	outline: thin dotted;

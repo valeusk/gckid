@@ -311,6 +311,7 @@ h6 {
   clear: both;
   line-height: 1.3em;
   margin-bottom: 10px;
+  font-family: "OpenSansBold";
 }
 
 h1 {
@@ -645,16 +646,17 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
+  color: #333;
+}
+a:hover {
   color: #3934b5;
+  -webkit-transition: all 0.2s ease;
+          transition: all 0.2s ease;
 }
 
 /*a:visited {
 	color: purple;
 }*/
-a:hover {
-  color: #ff2d2d;
-}
-
 /*a:focus {
 	outline: thin dotted;
 }*/
