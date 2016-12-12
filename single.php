@@ -20,7 +20,8 @@ get_header(); ?>
 
 			get_template_part( 'template-parts/content', get_post_format() );
 
-			the_post_navigation();
+			/*the_post_navigation();*/
+
 
 			// If comments are open or we have at least one comment, load up the comment template.
 			if ( comments_open() || get_comments_number() ) :
@@ -38,6 +39,18 @@ get_header(); ?>
         <!-- col-lg-12 -->
     </div>
     <!-- container bootstrap -->
+    <div class="container">
+       <div class="single-nav row">
+         <div class="previous col-lg-6 col-md-6" style="">
+         <? previous_post_link();?>
+         </div> <!-- previous -->
+
+
+        <div class="next col-lg-6 col-md-6" style=""  >
+         <? next_post_link();?>
+         </div> <!-- next -->
+        </div> <!-- single-nav row -->
+    </div> <!-- container -->
 </div>
 <!-- #primary -->
 

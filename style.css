@@ -1045,7 +1045,7 @@ FOOTER
 
 .site-main article {
   border-bottom: 1px solid #dbdbdb;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 /*--------------------------------------------------------------
@@ -1094,28 +1094,32 @@ FOOTER
   display: block;
 }
 
-/*-----------------------------------
-# Paginashion
-------------------------------------*/
-.nav-previous, .nav-next {
+/*-------Single post navigation--------*/
+.previous, .next {
   padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
 }
-.nav-previous a, .nav-next a {
-  font-size: 20;
+.previous a, .next a {
+  /*line-height: 40px;*/
+  font-size: 16px;
   font-family: "OpenSansBold";
-  background-color: #3934b5;
-  padding: 5px 10px;
+  /*background-color: $titlecolor;*/
+  /* padding: 5px 10px;*/
   border-radius: 4px;
-  color: #fff;
+  color: #000;
 }
-.nav-previous a:hover, .nav-next a:hover {
+.previous a:hover, .next a:hover {
   background-color: #fff;
   color: #3934b5;
-  border: 2px solid #3934b5;
+  text-decoration: underline;
   -webkit-transition: all 0.2s ease;
           transition: all 0.2s ease;
 }
 
+/*-----------------------------------
+# Paginashion
+------------------------------------*/
 .pagination-line {
   border: 2px solid #3934b5;
   border-radius: 4px;

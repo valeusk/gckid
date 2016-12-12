@@ -1143,7 +1143,7 @@ FOOTER
 
 .site-main article {
     border-bottom: 1px solid #dbdbdb;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 /*--------------------------------------------------------------
@@ -1193,29 +1193,38 @@ FOOTER
 	display: block;
 }
 
-/*-----------------------------------
-# Paginashion
-------------------------------------*/
 
-.nav-previous, .nav-next  {
+/*-------Single post navigation--------*/
+.previous, .next  {
     padding: 10px;
+    margin-bottom: 20px;
+
+    text-align:center;
     a {
-        font-size: 20;
+
+        /*line-height: 40px;*/
+        font-size: 16px;
         font-family: $titlefont;
-        background-color: $titlecolor;
-        padding: 5px 10px;
+        /*background-color: $titlecolor;*/
+       /* padding: 5px 10px;*/
         border-radius: 4px;
-        color: #fff;
+        color: #000;
+
         &:hover {
-           background-color:#fff;
+            background-color:#fff;
             color: $titlecolor;
-            border: 2px solid $titlecolor;
+            text-decoration: underline;
             transition: $transitionall;
         }
     }
 
 }
 
+
+
+/*-----------------------------------
+# Paginashion
+------------------------------------*/
 
 
 .pagination-line {
@@ -1462,7 +1471,6 @@ object {
 @media only screen and (max-width : 480px) {
 
 
-
 }
 
 /* Custom, iPhone Retina */
@@ -1494,6 +1502,9 @@ object {
 }
 
 }
+
+
+
 
 
 /*==========  Mobile First Method  ==========*/
