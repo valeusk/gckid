@@ -61,7 +61,7 @@ get_header(); ?>
             <div class="col-lg-12">
                 <div class="row">
                     <div class="pagination-line">
-                        <?php  my_pagenavi(); ?>
+                        <?php  the_posts_pagination() /*my_pagenavi()*/; ?>
                     </div>
                     <!-- pagination-line -->
                 </div>
