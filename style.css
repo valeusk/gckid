@@ -845,6 +845,20 @@ h2.widget-title {
       .widget-area li a:hover {
         color: #000; }
 
+/*-----------------------------------
+footer sidebar
+------------------------------------*/
+.f-sidebar .f-wtitle {
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 5px; }
+.f-sidebar ul {
+  list-style-type: none;
+  margin: 10px; }
+  .f-sidebar ul ul {
+    margin: 0px; }
+.f-sidebar li {
+  text-align: left; }
+
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/

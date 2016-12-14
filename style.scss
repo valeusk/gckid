@@ -1073,6 +1073,31 @@ h2.widget-title {
     }
 }
 
+
+/*-----------------------------------
+footer sidebar
+------------------------------------*/
+
+.f-sidebar {
+
+    .f-wtitle{
+        border-bottom: 2px solid $bordercolor;
+        padding-bottom: 5px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 10px;
+        ul {
+            margin: 0px;
+        }
+    }
+
+    li {
+      text-align: left;
+    }
+}
+
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/

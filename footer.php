@@ -46,6 +46,15 @@
                 </div> <!-- col-lg-12 -->
                 </div><!-- row -->
 
+           <div class="row">
+               <?php if ( is_active_sidebar( 'footer-side' ) ) : ?>
+     <div class="sidebar">
+        <?php dynamic_sidebar( 'footer-side' ); ?>
+     </div>
+<?php endif; ?>
+           </div> <!-- row -->
+
+
             </div> <!-- container bootstrap -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
