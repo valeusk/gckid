@@ -162,4 +162,9 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/jetpack.php';
 
-
+function mason_script() {
+	// wp_register_script('masonry', '/path/to/masonry.pkgd.min.js');
+	// верхняя строка не нужна, потому что в WordPress masonry есть в комплекте по умолчанию, поэтому можно просто его подключить.
+	wp_enqueue_script('masonry');
+}
+add_action( 'wp_enqueue_scripts', 'mason_script' );
