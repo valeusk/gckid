@@ -279,7 +279,7 @@ h5,
 h6 {
   clear: both;
   line-height: 1.3em;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-family: "OpenSansBold"; }
 
 h1 {
@@ -447,7 +447,8 @@ hr {
   background-color: #ccc;
   border: 0;
   height: 1px;
-  margin-bottom: 1.5em; }
+  margin-bottom: 10px;
+  margin-top: 0px; }
 
 ul,
 ol {
@@ -883,7 +884,7 @@ footer sidebar
     font-size: 20px;
 }*/
 input.search-submit {
-  width: 270px;
+  width: 80%;
   margin: 5px;
   font-size: 16px;
   box-shadow: none;
@@ -900,7 +901,7 @@ input.search-submit {
     box-shadow: none; }
 
 input.search-field {
-  width: 260px;
+  width: 76%;
   margin: 5px;
   border: 2px solid #3934b5; }
 

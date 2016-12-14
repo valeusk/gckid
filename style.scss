@@ -379,7 +379,7 @@ h5,
 h6 {
 	clear: both;
     line-height: 1.3em;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-family: $titlefont;
 }
 
@@ -406,6 +406,7 @@ h5 {
 h6 {
     font-size: 14px;
 }
+
 
 .box-shadow-custom {box-shadow: 3px 3px 15px 3px rgba(49, 24, 82, 0.53) , -5px -3px 15px -3px rgba(49, 24, 82, 0.5) ;}
 
@@ -580,7 +581,8 @@ hr {
 	background-color: #ccc;
 	border: 0;
 	height: 1px;
-	margin-bottom: 1.5em;
+	margin-bottom: 10px;
+    margin-top: 0px;
 }
 
 ul,
@@ -1127,7 +1129,7 @@ footer sidebar
 }*/
 
 input.search-submit {
-    width: 270px;
+    width: 80%;
     margin: 5px;
     font-size: 16px;
     box-shadow: none;
@@ -1146,7 +1148,7 @@ input.search-submit {
 }
 
 input.search-field {
-    width: 260px;
+    width: 76%;
     margin: 5px;
     border: 2px solid $titlecolor;
 }
