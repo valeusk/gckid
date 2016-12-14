@@ -15,7 +15,8 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 	 <div class="container">
-                <div class="col-lg-4 col-md-4">
+              <div class="row">
+                   <div class="col-lg-4 col-md-4">
                     <div class="gckid-info">
                         <h5>Городской центр культуры и досуга</h5>
                         <p>Часы работы: 8:00-17:00</p>
@@ -34,26 +35,50 @@
                      </div>
                  </div><!-- col-lg-8 col-md-8 -->
 
-                  <div class="row">
-                   <div class="col-lg-12">
-                    <div class="row">
+                 </div> <!-- row -->
+
+          <div class="row">
+             <div class="col-lg-3 col-md-3">
+                   <?php if ( is_active_sidebar( 'footer-side' ) ) : ?>
+                    <div class="sidebar">
+                        <?php dynamic_sidebar( 'footer-side1' ); ?>
+                    </div>
+                <?php endif; ?>
+            </div> <!-- col-lg-4 col-md-4 -->
+
+            <div class="col-lg-3 col-md-3">
+                   <?php if ( is_active_sidebar( 'footer-side' ) ) : ?>
+                    <div class="sidebar">
+                        <?php dynamic_sidebar( 'footer-side2' ); ?>
+                    </div>
+                <?php endif; ?>
+            </div> <!-- col-lg-4 col-md-4 -->
+
+            <div class="col-lg-3 col-md-3">
+                   <?php if ( is_active_sidebar( 'footer-side' ) ) : ?>
+                    <div class="sidebar">
+                        <?php dynamic_sidebar( 'footer-side3' ); ?>
+                    </div>
+                <?php endif; ?>
+            </div> <!-- col-lg-4 col-md-4 -->
+
+            <div class="col-lg-3 col-md-3">
+                   <?php if ( is_active_sidebar( 'footer-side' ) ) : ?>
+                    <div class="sidebar">
+                        <?php dynamic_sidebar( 'footer-side4' ); ?>
+                    </div>
+                <?php endif; ?>
+            </div> <!-- col-lg-4 col-md-4 -->
+
+        </div> <!-- row -->
+
+            <div class="row">
                         <div class="site-info">
                             <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'gckid' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'gckid' ), 'WordPress' ); ?></a>
                             <span class="sep"> | </span>
                             <?php printf( esc_html__( 'Верстка: %1$s  %2$s.', 'gckid' ), '', '<a href="https://vk.com/id57910146" rel="designer">Кузьмин В. В.</a>' ); ?>
                         </div><!-- .site-info -->
 	                </div> <!-- row -->
-                </div> <!-- col-lg-12 -->
-                </div><!-- row -->
-
-           <div class="row">
-               <?php if ( is_active_sidebar( 'footer-side' ) ) : ?>
-     <div class="sidebar">
-        <?php dynamic_sidebar( 'footer-side' ); ?>
-     </div>
-<?php endif; ?>
-           </div> <!-- row -->
-
 
             </div> <!-- container bootstrap -->
 	</footer><!-- #colophon -->
