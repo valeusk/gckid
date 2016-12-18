@@ -24,7 +24,9 @@ function gckid_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'gckid_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
-		'width'                  => 1000,
+        'flex-width'             => true,
+		'width'                  => '250',
+        /*'flex-height'            => true,*/
 		'height'                 => 250,
 		'flex-height'            => true,
 		'wp-head-callback'       => 'gckid_header_style',

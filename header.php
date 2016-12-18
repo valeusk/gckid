@@ -26,7 +26,10 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'gckid' ); ?></a>
 
-	<header id="masthead" class="site-header" role="banner">
+	<header id="masthead" class="site-header" style="background-image:linear-gradient(rgba(52, 78, 181, 0.59),rgba(255, 255, 255, 1)), url(<?php header_image(); ?>);" role="banner">
+
+
+
 		<div class="site-branding">
 			<div style="text-align:center;" class="container">
 			<?php echo get_custom_logo(); ?>
