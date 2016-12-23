@@ -384,10 +384,6 @@ big {
 
 /*---------------- Header -----------------
 ------------------------------------------*/
-.site-header {
-  background-image: -webkit-linear-gradient(#344eb5, #fff);
-  background-image: linear-gradient(#344eb5, #fff); }
-
 .site-title {
   font-family: "Exo2Bold";
   font-size: 30px;
@@ -408,7 +404,7 @@ big {
   text-transform: uppercase; }
 
 .site-branding {
-  margin: 70px 6px 10px; }
+  margin: 80px 6px 10px; }
 
 /*-----------------------------------------
 LOGO
@@ -605,7 +601,7 @@ a:active {
 /*nav 3 ╨▓╨░╤А╨╕╨░╨╜╤В*/
 .main-navigation {
   z-index: 99999;
-  background-color: #fff;
+  background-color: white;
   position: fixed;
   top: 0; }
 
@@ -635,7 +631,7 @@ a:active {
 
 .menu-item {
   padding: 5px 3px;
-  border: 2px solid #fff; }
+  border: 2px solid white; }
   .menu-item:hover {
     color: #f81313;
     border: 2px dashed;
@@ -1223,6 +1219,9 @@ object {
     border-bottom: 2px solid #f0f0f0;
     text-transform: uppercase; } }
 /* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .site-branding {
+    margin: 30px 6px 10px; } }
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
   h2.entry-title {
@@ -1245,7 +1244,10 @@ object {
     padding-left: 20px;
     padding-bottom: 5px;
     border-bottom: 2px solid #f0f0f0;
-    text-transform: uppercase; } }
+    text-transform: uppercase; }
+
+  .site-branding {
+    margin: 30px 6px 10px; } }
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
 /* Extra Small Devices, Phones */

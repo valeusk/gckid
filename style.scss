@@ -36,8 +36,9 @@ $gradientcolor2:#fff;
 $menufont:"Exo2Bold";
 $site-titlecolor: #fff;
 $menu-curent-color:#f81313;
-
-
+$menuback:rgba(255, 255, 255, 1);
+$description-color:#fff;
+$contur-txt-dark: -1px 0 1px #000, 1px 0 1px #000, 0 -1px 1px #000, 0 1px 1px #000, 0 0 15px #000;
 
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
@@ -414,7 +415,7 @@ h6 {
 
 .contur-txt-dark {
 /*color:#fff;*/
-text-shadow: -1px 0 1px #000, 1px 0 1px #000, 0 -1px 1px #000, 0 1px 1px #000, 0 0 15px #000;
+text-shadow: $contur-txt-dark;
 }
 
 
@@ -509,9 +510,7 @@ big {
 
 /*---------------- Header -----------------
 ------------------------------------------*/
-.site-header {
-     background-image: linear-gradient($gradientcolor1,$gradientcolor2);
-   }
+
 
  .site-title  {
     font-family: $sitetitlefont;
@@ -531,12 +530,14 @@ big {
 
 .site-description {
     text-align: center;
-    color: $menutxtcolor;
+    color: $description-color;
     margin: -40px 0px 0px;
     text-transform: uppercase;
-    }
+    text-shadow: $contur-txt-dark;
+}
+
 .site-branding {
-    margin: 70px 6px 10px;
+    margin: 80px 6px 10px;
 }
 
 
@@ -761,7 +762,7 @@ a:active {
 
 /*nav 3 вариант*/.main-navigation /*#site-navigation Вариант 2*/ {
     z-index: 99999;
-    background-color: #fff;
+    background-color: $menuback;
     position: fixed;
     top: 0;
 }
@@ -797,7 +798,7 @@ a:active {
 
 .menu-item {
     padding: 5px 3px;
-    border: 2px solid #fff;
+    border: 2px solid $menuback;
 
     &:hover{
         color: $menu-curent-color;
@@ -1563,7 +1564,9 @@ object {
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+.site-branding {
+    margin: 30px 6px 10px;
+    }
 
 }
 
@@ -1594,6 +1597,11 @@ object {
     border-bottom: 2px solid $bordercolor;
     text-transform: uppercase;
 }
+
+    .site-branding {
+    margin: 30px 6px 10px;
+    }
+
 
 }
 
