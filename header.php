@@ -25,8 +25,8 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'gckid' ); ?></a>
-
-	<header id="masthead" class="site-header" style="background-image:linear-gradient(rgba(24, 45, 129, 0.74),rgba(255, 255, 255, 1)), url(<?php header_image(); ?>);background-position: center; " role="banner">
+    <div class="headgrad">
+	<header id="masthead" class="site-header" style="background-image: url(<?php header_image(); ?>);background-position: center; " role="banner">
 
 <!--
 background-repeat:no-repeat;
@@ -61,5 +61,5 @@ background-repeat:no-repeat;
 
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
-
+</div>
 	<div id="content" class="site-content">

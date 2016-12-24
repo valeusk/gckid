@@ -1645,5 +1645,30 @@ object {
 
 }
 
+.mpce-prvt-1836-585805b4b4141 .post {
+    background-color: rgba(255, 255, 255, 0);
+}
 
+.post  {
+	background-color: #edebd8;
+	padding: 20px;
+	border-radius: 10px;
+}
 
+.headgrad {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3d1e9a+0,8e7ee8+100&1+0,1+38,1+55,0.7+93,0+100 */
+
+background: -moz-linear-gradient(top, rgba(61, 30, 154, 1) 0%, rgba(92, 66, 184, 1) 38%, rgba(106, 82, 197, 1) 55%, rgba(136, 119, 227, 0.7) 93%, rgba(142, 126, 232, 0) 100%);
+
+/* FF3.6-15 */
+
+background: -webkit-linear-gradient(top, rgba(61, 30, 154, 1) 0%, rgba(92, 66, 184, 1) 38%, rgba(106, 82, 197, 1) 55%, rgba(136, 119, 227, 0.7) 93%, rgba(142, 126, 232, 0) 100%);
+
+/* Chrome10-25,Safari5.1-6 */
+
+background: linear-gradient(to bottom, rgba(61, 30, 154, 1) 0%, rgba(92, 66, 184, 1) 38%, rgba(106, 82, 197, 1) 55%, rgba(136, 119, 227, 0.7) 93%, rgba(142, 126, 232, 0) 100%);
+
+/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3d1e9a', endColorstr='#008e7ee8', GradientType=0);
+}
