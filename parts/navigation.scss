@@ -1,0 +1,235 @@
+/*--------------------------------------------------------------
+# navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+
+a.more-link {
+    box-shadow: 3px 3px 15px 3px rgba(49, 24, 82, 0.53), -5px -3px 15px -3px rgba(49, 24, 82, 0.5);
+}
+
+a {
+    color: $linkcolor;
+    &:hover {
+        color: $linkhover;
+        transition: $transitionall;
+    }
+}
+
+/*a:visited {
+	color: purple;
+}*/
+
+/*a:focus {
+	outline: thin dotted;
+}*/
+
+a:hover,
+a:active {
+	outline: 0;
+}
+
+/*--------------------------------------------------------------
+## Menus
+--------------------------------------------------------------*/
+.main-navigation {
+    clear: both;
+	/*display: block;*/
+	width: 100%;
+    border-top: 1px solid $bordercolor;
+    border-bottom: 1px solid $bordercolor;
+    padding: 8px 0;
+}
+
+/*липкое меню*/
+
+/*nav 3 вариант*/.main-navigation /*#site-navigation Вариант 2*/ {
+    z-index: 11;
+    background-color: $menuback;
+    position: fixed;
+    top: 0;
+}
+
+
+.main-navigation ul {
+	display: none;
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+    text-align: center;
+}
+
+.main-navigation li {
+	text-align: center;
+	position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    text-transform: uppercase;
+    margin-right: 10px;
+    margin-left: 10px;
+    }
+
+.main-navigation a {
+	display: block;
+	text-decoration: none;
+    color: $menutxtcolor;
+    font-family: $menufont;
+        &:hover{
+        color: $menu-curent-color;
+        }
+}
+
+.menu-item {
+    padding: 5px 3px;
+    border: 2px solid $menuback;
+
+    &:hover{
+        color: $menu-curent-color;
+        border: 2px dashed;
+        padding: 5px 3px;
+        transition: $transitionall;
+        margin-top: 0px;
+        margin-bottom: 0px;
+
+    }
+}
+
+.current-menu-item{
+    border: 2px solid $menu-curent-color;
+    color: $menu-curent-color;
+    padding: 5px 3px;
+    a{
+    color: $menu-curent-color;
+    font-family: $menufont;
+    }
+}
+
+
+.sub-menu {
+    background-color: #fff;
+    border-radius: 0px 0px 5px 5px;
+    border-top:  1px solid  #fff;
+        /*ul {
+
+        }*/
+
+        .menu-item  {
+            border: 2px solid #fff;
+            padding: 5px;
+            margin: 5px;
+
+            &:first-child {
+
+            }
+
+            &:hover {
+            color: #d84f4f;
+            border: 2px dashed;
+            border-radius: 4px;
+            transition: $transitionall;
+            }
+        }
+
+}
+
+.main-navigation ul ul {
+	margin-top: 10px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	float: left;
+	position: absolute;
+	top: 1.5em;
+	left: -999em;
+	//z-index: 99999;
+}
+
+.main-navigation ul ul ul {
+	left: -999em;
+	top: 0;
+}
+
+.main-navigation ul ul a {
+	width: 200px;
+}
+
+.main-navigation ul ul li {
+
+}
+
+.main-navigation li:hover > a,
+.main-navigation li.focus > a {
+}
+
+.main-navigation ul ul :hover > a,
+.main-navigation ul ul .focus > a {
+}
+
+.main-navigation ul ul a:hover,
+.main-navigation ul ul a.focus {
+}
+
+.main-navigation ul li:hover > ul,
+.main-navigation ul li.focus > ul {
+	left: auto;
+}
+
+.main-navigation ul ul li:hover > ul,
+.main-navigation ul ul li.focus > ul {
+	left: 100%;
+}
+
+.main-navigation .current_page_item > a,
+.main-navigation .current-menu-item > a,
+.main-navigation .current_page_ancestor > a,
+.main-navigation .current-menu-ancestor > a {
+}
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+}
+
+button.menu-toggle {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    font-size: 20px;
+    padding: 0px;
+    margin: 0 auto;
+    &:hover {
+        color: $titlecolor;
+        transition: all 0.3s ease;
+    }
+}
+
+/*@media screen and (min-width: 37.5em) {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+}*/
+
+.site-main .comment-navigation,
+.site-main .posts-navigation,
+.site-main .post-navigation {
+	margin: 0 0 1.5em;
+	overflow: hidden;
+}
+
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+	float: left;
+	width: 50%;
+}
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+	float: right;
+	text-align: right;
+	width: 50%;
+}

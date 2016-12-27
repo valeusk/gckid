@@ -1,0 +1,32 @@
+/*----------------------------------------------------------
+footer
+----------------------------------------------------------*/
+.site-footer {
+    background-color: $footercolor;
+    padding: 40px 0;
+    text-align: center;
+    color:  $footer-txt-color;
+    a {
+        color:  $footer-txt-color;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.gckid-info  {
+    //padding-top: 15px;
+    color: $footer-txt-color;
+    h5 {
+        text-align: justify;
+        border-bottom: 2px solid;
+        padding-bottom: 5px;}
+
+    p {
+        text-align: left;
+    }
+}
+
+.map-gckid {
+    margin: 0px;
+}

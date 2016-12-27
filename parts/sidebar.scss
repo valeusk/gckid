@@ -1,0 +1,65 @@
+/*-----------------------------------------------
+sidebar
+----------------------------------------------*/
+
+h2.widget-title {
+    font-size: 28px;
+    font-family: $titlefont, sans-serif;
+    color: $titlecolor;
+    border-bottom: 1px solid $titlecolor;
+    padding-bottom: 8px;
+}
+
+.widget-area {
+    margin-left: 30px;
+
+    ul {
+        margin: 0px;
+    }
+
+    li {
+        list-style: none;
+        padding: 15px 10px;
+        margin: 0;
+        border-bottom: 1px solid #f2f2f2;
+
+        &:first-child {
+            padding-top: 20px;
+        }
+
+        a{
+            color: $menutxtcolor;
+            &:hover {
+                color: #000;
+            }
+        }
+    }
+}
+
+
+/*-----------------------------------
+footer sidebar
+------------------------------------*/
+
+.f-sidebar {
+   display: inline-grid;
+    .f-wtitle{
+        border-bottom: 2px solid $bordercolor;
+        padding-bottom: 5px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 10px;
+        ul {
+            margin: 0px;
+        }
+
+
+    }
+
+    li {
+
+      text-align: left;
+    }
+}
