@@ -62,14 +62,16 @@ html {
   /* Keeps page centered in all browsers regardless of content height */
   -webkit-text-size-adjust: 100%;
   /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
-  -ms-text-size-adjust: 100%
+  -ms-text-size-adjust: 100%;
   /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */ }
 
 *,
 *:before,
 *:after {
   /* apply a natural box layout model to all elements; see http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+  -webkit-box-sizing: border-box;
   /* Not needed for modern webkit but still used by Blackberry Browser 7.0; see http://caniuse.com/#search=box-sizing */
+  -moz-box-sizing: border-box;
   /* Still needed for Firefox 28; see http://caniuse.com/#search=box-sizing */
   box-sizing: border-box; }
 
@@ -309,8 +311,7 @@ h2.entry-title {
     color: #333; }
     h2.entry-title a:hover {
       color: #3934b5;
-      -webkit-transition: all 0.2s ease;
-              transition: all 0.2s ease; }
+      transition: all 0.2s ease; }
 
 h1.entry-title {
   font-size: 25px;
@@ -382,22 +383,24 @@ img.custom-logo {
 
 .headgrad {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+16,eff1f9+37,7c78ce+100&1+55,0.83+81,0+100 */
+  background: -moz-linear-gradient(top, white 16%, #eff1f9 37%, #ceceed 55%, rgba(159, 156, 219, 0.83) 81%, rgba(124, 120, 206, 0) 100%);
   /* FF3.6-15 */
   background: -webkit-linear-gradient(top, white 16%, #eff1f9 37%, #ceceed 55%, rgba(159, 156, 219, 0.83) 81%, rgba(124, 120, 206, 0) 100%);
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, white 16%, #eff1f9 37%, #ceceed 55%, rgba(159, 156, 219, 0.83) 81%, rgba(124, 120, 206, 0) 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#007c78ce',GradientType=0 )
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#007c78ce',GradientType=0 );
   /* IE6-9 */ }
 
 .headgrad0 {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+16,eff1f9+54,7c78ce+91,6e2be9+97,6e2be9+100&1+40,0.83+76,0+100 */
+  background: -moz-linear-gradient(top, white 16%, #f5f6fb 40%, rgba(239, 241, 249, 0.93) 54%, rgba(171, 169, 223, 0.83) 76%, rgba(124, 120, 206, 0.31) 91%, rgba(110, 43, 233, 0.1) 97%, rgba(110, 43, 233, 0) 100%);
   /* FF3.6-15 */
   background: -webkit-linear-gradient(top, white 16%, #f5f6fb 40%, rgba(239, 241, 249, 0.93) 54%, rgba(171, 169, 223, 0.83) 76%, rgba(124, 120, 206, 0.31) 91%, rgba(110, 43, 233, 0.1) 97%, rgba(110, 43, 233, 0) 100%);
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, white 16%, #f5f6fb 40%, rgba(239, 241, 249, 0.93) 54%, rgba(171, 169, 223, 0.83) 76%, rgba(124, 120, 206, 0.31) 91%, rgba(110, 43, 233, 0.1) 97%, rgba(110, 43, 233, 0) 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#006e2be9',GradientType=0 )
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#006e2be9',GradientType=0 );
   /* IE6-9 */ }
 
 .site-title {
@@ -492,7 +495,7 @@ img {
   box-shadow: 3px 3px 15px 3px rgba(49, 24, 82, 0.53), -5px -3px 15px -3px rgba(49, 24, 82, 0.5); }
 
 figure {
-  margin: 1em 0
+  margin: 1em 0;
   /* Extra wide images within figure tags don't overflow the content area. */ }
 
 table {
@@ -594,8 +597,7 @@ a {
   color: #333; }
   a:hover {
     color: #3934b5;
-    -webkit-transition: all 0.2s ease;
-            transition: all 0.2s ease; }
+    transition: all 0.2s ease; }
 
 /*a:visited {
 	color: purple;
@@ -657,8 +659,7 @@ a:active {
     color: #f81313;
     border: 2px dashed;
     padding: 5px 3px;
-    -webkit-transition: all 0.2s ease;
-            transition: all 0.2s ease;
+    transition: all 0.2s ease;
     margin-top: 0px;
     margin-bottom: 0px; }
 
@@ -673,7 +674,7 @@ a:active {
 .sub-menu {
   background-color: #fff;
   border-radius: 0px 0px 5px 5px;
-  border-top: 1px solid  #fff
+  border-top: 1px solid  #fff;
         /*ul {
 
         }*/ }
@@ -685,8 +686,7 @@ a:active {
       color: #d84f4f;
       border: 2px dashed;
       border-radius: 4px;
-      -webkit-transition: all 0.2s ease;
-              transition: all 0.2s ease; }
+      transition: all 0.2s ease; }
 
 .main-navigation ul ul {
   margin-top: 10px;
@@ -725,8 +725,7 @@ button.menu-toggle {
   margin: 0 auto; }
   button.menu-toggle:hover {
     color: #3934b5;
-    -webkit-transition: all 0.3s ease;
-            transition: all 0.3s ease; }
+    transition: all 0.3s ease; }
 
 /*@media screen and (min-width: 37.5em) {
 	.menu-toggle {
@@ -783,7 +782,7 @@ button.menu-toggle {
   text-decoration: none;
   top: 5px;
   width: auto;
-  z-index: 100000
+  z-index: 100000;
   /* Above WP toolbar. */ }
 
 /* Do not show the outline on the skip link target. */
@@ -918,8 +917,7 @@ input.search-submit {
     color: #fff;
     background: #3934b5;
     border: 2px solid #3934b5;
-    -webkit-transition: all 0.2s ease;
-            transition: all 0.2s ease;
+    transition: all 0.2s ease;
     box-shadow: none; }
 
 input.search-field {
@@ -950,7 +948,8 @@ footer
     text-align: left; }
 
 .map-gckid {
-  margin: 0px; }
+  margin: 0px;
+  border: 2px solid #333; }
 
 /*--------------------------------------------------------------
 # content
@@ -978,8 +977,7 @@ footer
     background-color: #3934b5;
     font-family: "OpenSansBold";
     color: #fff;
-    -webkit-transition: all 0.6s ease;
-            transition: all 0.6s ease; }
+    transition: all 0.6s ease; }
 
 a.more-link {
   color: #3934b5;
@@ -1057,8 +1055,7 @@ a.more-link {
       background-color: #fff;
       color: #3934b5;
       text-decoration: underline;
-      -webkit-transition: all 0.2s ease;
-              transition: all 0.2s ease; }
+      transition: all 0.2s ease; }
 
 /*-----------------------------------
 # Paginashion
@@ -1088,8 +1085,7 @@ margin-bottom: 0px;*/
     /*padding: 2px 5px;*/
     border: 2px solid #fff;
     border-radius: 3px;
-    -webkit-transition: all 0.2s ease;
-            transition: all 0.2s ease; }
+    transition: all 0.2s ease; }
 
 .page-numbers.dots {
   color: #fff;
@@ -1210,8 +1206,7 @@ object {
       background-color: #3934b5;
       border: 2px solid #fff;
       border-radius: 4px;
-      -webkit-transition: all 0.2s ease;
-              transition: all 0.2s ease; }
+      transition: all 0.2s ease; }
       .main-navigation li:hover a {
         color: #fff; }
     .main-navigation li:last-child {
@@ -1242,8 +1237,7 @@ object {
       color: #333; }
       h2.entry-title a:hover {
         color: #3934b5;
-        -webkit-transition: all 0.2s ease;
-                transition: all 0.2s ease; }
+        transition: all 0.2s ease; }
 
   h1.entry-title {
     font-size: 22px;
@@ -1269,8 +1263,7 @@ object {
       color: #333; }
       h2.entry-title a:hover {
         color: #3934b5;
-        -webkit-transition: all 0.2s ease;
-                transition: all 0.2s ease; }
+        transition: all 0.2s ease; }
 
   h1.entry-title {
     font-size: 16px;
