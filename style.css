@@ -885,6 +885,8 @@ footer sidebar
   padding: 10px;
   border-radius: 5px;
   box-shadow: 3px 3px 15px 3px rgba(49, 24, 82, 0.53), -5px -3px 15px -3px rgba(49, 24, 82, 0.5); }
+  .widget img {
+    box-shadow: none; }
 
 .widget {
   margin: 0 0 70px; }
@@ -965,7 +967,8 @@ footer
   margin-bottom: 20px; }
 
 .thumbnail-my {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  box-shadow: 3px 3px 15px 3px rgba(49, 24, 82, 0.53), -5px -3px 15px -3px rgba(49, 24, 82, 0.5); }
 
 .more-link {
   text-transform: uppercase;
