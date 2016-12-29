@@ -47,13 +47,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     margin: -40px 0px 0px;
     text-transform: uppercase;
     text-shadow: $contur-txt-dark;
+    letter-spacing: 1px;
 }
 
 .site-branding {
-    margin: 80px 6px 10px;
+   margin: 80px 6px 10px;
 }
 
-
+//.site-header {
+//    margin-top: 53px;
+//}
 /*-----------------------------------------
 LOGO
 ------------------------------------------*/

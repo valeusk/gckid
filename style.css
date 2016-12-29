@@ -421,7 +421,8 @@ img.custom-logo {
   color: #fff;
   margin: -40px 0px 0px;
   text-transform: uppercase;
-  text-shadow: -1px 0 1px #000, 1px 0 1px #000, 0 -1px 1px #000, 0 1px 1px #000, 0 0 15px #000; }
+  text-shadow: -1px 0 1px #000, 1px 0 1px #000, 0 -1px 1px #000, 0 1px 1px #000, 0 0 15px #000;
+  letter-spacing: 1px; }
 
 .site-branding {
   margin: 80px 6px 10px; }
