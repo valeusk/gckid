@@ -1,5 +1,8 @@
 /*---------------- Header -----------------
 ------------------------------------------*/
+
+
+
 img.custom-logo {
     box-shadow: none;
 }
@@ -51,16 +54,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 .site-branding {
-   margin: 80px 6px 10px;
-}
+   padding-top: 30px;
+   padding-bottom: 20px;
+    background-color: rgba(45, 68, 195, 0.21);
 
-//.site-header {
-//    margin-top: 53px;
-//}
+   }
+
+
+
+.site-header {
+    margin-top: 52px;
+
+}
 /*-----------------------------------------
 LOGO
 ------------------------------------------*/
 
 .custom-logo {
     margin: 10px;
+
 }
