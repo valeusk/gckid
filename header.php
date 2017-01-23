@@ -25,14 +25,14 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'gckid' ); ?></a>
-    <div class="headgrad">
+
 	<header id="masthead" class="site-header" style="background: url(<?php header_image(); ?>);background-position: center; " role="banner">
 
 <!--
 background-repeat:no-repeat;
 -->
 
-		<div class="site-branding">
+		<div class="site-branding headgrad">
 			<div style="text-align:center;" class="container">
 			<?php echo get_custom_logo(); ?>
 			</div><!-- container  -->
@@ -61,5 +61,4 @@ background-repeat:no-repeat;
 
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
-</div>
 	<div id="content" class="site-content">
