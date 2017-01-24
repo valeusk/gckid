@@ -63,6 +63,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 .site-header {
     margin-top: 52px;
+    display: flex;
+    flex-direction:column;
+    align-content: center;
+    align-items: stretch;
+    justify-content:space-around;
 }
 
 /*-----------------------------------------
