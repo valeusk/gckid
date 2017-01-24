@@ -26,14 +26,24 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'gckid' ); ?></a>
 
-	<header id="masthead" class="site-header" style="background: url(<?php header_image(); ?>);background-position: center; " role="banner">
+	<header id="masthead" class="site-header headgrad" style="background: url(<?php header_image(); ?>);background-position: center;background-repeat:no-repeat; " role="banner">
 
 <!--
 background-repeat:no-repeat;
 -->
 
-		<div class="site-branding headgrad">
-			<div style="text-align:center;" class="container">
+
+        <nav id="site-navigation" class="main-navigation" role="navigation">
+
+                            <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="fa fa-bars" aria-hidden="true"></i>
+                            </button>
+
+                            <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+
+		</nav><!-- #site-navigation -->
+
+		<div class="site-branding ">
+			<div  class="flex-wrap-logo">
 			<?php echo get_custom_logo(); ?>
 			</div><!-- container  -->
 
@@ -52,13 +62,6 @@ background-repeat:no-repeat;
 			endif; ?>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
 
-                            <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="fa fa-bars" aria-hidden="true"></i>
-                            </button>
-
-                            <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-
-		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 	<div id="content" class="site-content">
