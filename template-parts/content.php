@@ -58,4 +58,4 @@
 
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
-</div> <!-- my-post -->
+</div><!-- my-post -->

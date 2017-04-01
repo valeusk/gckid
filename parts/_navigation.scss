@@ -40,15 +40,16 @@ a:active {
     border-top: 1px solid $bordercolor;
     border-bottom: 1px solid $bordercolor;
     padding: 8px 0;
+    z-index: 11;
+    background-color: $menuback;
+    position: fixed;
+    top: 0;
 }
 
 /*липкое меню*/
 
 /*nav 3 вариант*/.main-navigation /*#site-navigation Вариант 2*/ {
-    z-index: 11;
-    background-color: $menuback;
-    position: fixed;
-    top: 0;
+
 }
 
 

@@ -26,8 +26,8 @@ function gckid_custom_header_setup() {
 		'default-text-color'     => '000000',
         'flex-width'             => true,
 		'width'                  => '1220',
-        'height'                 => 290,
-		/*'flex-height'            => true,*/
+        'height'                 => '320',
+		'flex-height'            => true,
 		'wp-head-callback'       => 'gckid_header_style',
 	) ) );
 }

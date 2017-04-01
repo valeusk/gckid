@@ -51,22 +51,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 .site-branding {
+    margin-top: 52px;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     align-content: center;
     align-items: center;
-    justify-content:space-around;
+    justify-content: flex-end;
     padding-top: 30px;
     padding-bottom: 20px;
     background-color: rgba(45, 68, 195, 0.21);
 }
 
 .site-header {
-    margin-top: 52px;
     display: flex;
     flex-direction:column;
     align-content: center;
-    align-items: stretch;
+    //align-items: stretch;
     justify-content:space-around;
 }
 
@@ -76,5 +76,5 @@ LOGO
 
 .custom-logo {
     margin: 10px;
-
 }
+

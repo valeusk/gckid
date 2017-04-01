@@ -26,7 +26,7 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'gckid' ); ?></a>
 
-	<header id="masthead" class="site-header headgrad" style="background: url(<?php header_image(); ?>);background-position: center;background-repeat:no-repeat; " role="banner">
+	<header id="masthead" class="site-header headgrad"  role="banner">
 
 <!--
 background-repeat:no-repeat;
@@ -42,8 +42,9 @@ background-repeat:no-repeat;
 
 		</nav><!-- #site-navigation -->
 
-		<div class="site-branding ">
-			<div  class="flex-wrap-logo">
+		<div class="site-branding" style="background: url(<?php header_image(); ?>);background-position: center;background-size:cover;background-repeat:no-repeat; ">
+
+			<div  class="container-fluid">
 			<?php echo get_custom_logo(); ?>
 			</div><!-- container  -->
 

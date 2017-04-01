@@ -182,13 +182,20 @@ object {
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 .site-branding {
-    margin: 30px 6px 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px 0px 10px;
     }
 
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
+
+
 
   h2.entry-title {
         font-size: 16px;

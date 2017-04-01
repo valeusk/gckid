@@ -422,6 +422,7 @@ img.custom-logo {
   letter-spacing: 1px; }
 
 .site-branding {
+  margin-top: 52px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -438,15 +439,30 @@ img.custom-logo {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   padding-top: 30px;
   padding-bottom: 20px;
   background-color: rgba(45, 68, 195, 0.21); }
 
 .site-header {
-  margin-top: 52px; }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
 
 /*-----------------------------------------
 LOGO
@@ -641,16 +657,14 @@ a:active {
   width: 100%;
   border-top: 1px solid #bcbaba;
   border-bottom: 1px solid #bcbaba;
-  padding: 8px 0; }
-
-/*╨╗╨╕╨┐╨║╨╛╨╡ ╨╝╨╡╨╜╤О*/
-/*nav 3 ╨▓╨░╤А╨╕╨░╨╜╤В*/
-.main-navigation {
+  padding: 8px 0;
   z-index: 11;
   background-color: white;
   position: fixed;
   top: 0; }
 
+/*╨╗╨╕╨┐╨║╨╛╨╡ ╨╝╨╡╨╜╤О*/
+/*nav 3 ╨▓╨░╤А╨╕╨░╨╜╤В*/
 .main-navigation ul {
   display: none;
   list-style: none;
@@ -1285,7 +1299,26 @@ object {
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   .site-branding {
-    margin: 30px 6px 10px; } }
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    margin: 30px 0px 10px; } }
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
   h2.entry-title {
